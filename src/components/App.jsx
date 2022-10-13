@@ -46,7 +46,7 @@ export class App extends Component {
       number,
     };
     //  перевірка
-    if (newContact.number.length !== 13) {
+    if (newContact.number.length < 13) {
       alert('the phone number is too short');
       return;
     }
