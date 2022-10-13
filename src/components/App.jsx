@@ -50,6 +50,10 @@ export class App extends Component {
       alert('the phone number is too short');
       return;
     }
+    if (newContact.number.length > 13) {
+      alert('the phone number is too long');
+      return;
+    }
 
     if (!this.checkNameContacts(newContact.name, this.state.contacts)) {
       this.setState(prevState => ({
