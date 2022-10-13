@@ -49,8 +49,7 @@ export class App extends Component {
     if (newContact.number.length < 13) {
       alert('the phone number is too short');
       return;
-    }
-    if (newContact.number.length > 13) {
+    } else if (newContact.number.length > 13) {
       alert('the phone number is too long');
       return;
     }
